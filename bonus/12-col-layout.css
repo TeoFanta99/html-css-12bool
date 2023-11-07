@@ -7,6 +7,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    color: white;
+}
+
+h1, h2 {
+    color: black;
+}
+
 
 /* caratteristiche delle righe */
 .row {
@@ -23,12 +31,18 @@
     flex: 0 0 auto;
     min-height: 70px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .col {
     display: flex;
     background-color: #086CFA;
     border: 2px solid white;
+}
+
+.big-col {
+    min-height: 140px;
 }
 
 .col-1 {
@@ -219,4 +233,38 @@
 .col-nes-12 {
     flex-basis: calc((100% / 12 ) * 12);
     max-width: calc((100% / 12 ) * 12);
+}
+
+
+/* alignment */
+.start {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.middle {
+    align-items: center;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
 }
